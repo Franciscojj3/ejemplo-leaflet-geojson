@@ -41,16 +41,16 @@
 	var popupContent = "";
 
 	if (feature.properties && feature.properties.scientif_1) {
-	  popupContent +="<br>"+Nombre.properties.scientif_1;
+	  popupContent +="+ feature.properties.scientif_1;
 	}
 	if (feature.properties && feature.properties.verbatimLo) {
-	  popupContent +="<br>"+Localidad.properties.verbatimLo;
+	  popupContent +="<br>"+ feature .properties.verbatimLo;
 	}
 	if (feature.properties && feature.properties.decimalLat) {
-	  popupContent +="<br>" Latitud.properties.decimalLat;
+	  popupContent +="<br>" feature.properties.decimalLat;
 	}
 	if (feature.properties && feature.properties.decimalLon) {
-	  popupContent +="<br>" Longitud.properties.decimalLon;
+	  popupContent +="<br>" feature.properties.decimalLon;
 	}
 	layer.bindPopup(popupContent);
       }	    
